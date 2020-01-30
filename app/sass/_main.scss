@@ -1,0 +1,137 @@
+body {
+  //height: 100vh;
+  font-family: "Monomakh Unicode TT", Arial, sans-serif;
+}
+.left-menu{
+  position: fixed;
+  padding: 60px 20px 20px 20px;
+  background-color: #1c44e6;
+  box-shadow: 23px -17px 23px -23px rgba(98,99,63,0.9);
+  min-width: 15%;
+  height: 100vh;
+}
+.left-menu-mobile {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 15px;
+  z-index: 6;
+  background-color: #1c44e6;
+  .user-menu {
+    margin-bottom: 0;
+    &__item {
+      padding-bottom: 0;
+    }
+    &__link {
+      display: block;
+    }
+    &__link:hover {
+      text-decoration: none;
+      opacity: 0.6;
+
+    }
+  }
+}
+.user-menu {
+  list-style-type: none;
+  padding-left: 0;
+  z-index: 6;
+  .user-page {
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    img {
+      cursor: pointer;
+    }
+  }
+  &__subtitle {
+    color: white;
+    font-family: $font_family_monomakh;
+    font-size: 30px;
+    padding-left: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  &__link {
+    display: block;
+  }
+  &__link:hover {
+    text-decoration: none;
+    opacity: 0.6;
+
+  }
+}
+.right-block, .right-block-mobile {
+  position: fixed;
+  right: 0;
+  min-width: 10%;
+  box-shadow: -23px 1px 23px -23px rgba(98,98,63,0.82);
+  overflow: scroll;
+  height: 100vh;
+  &__item {
+    list-style-type: none;
+  }
+  &__img {
+   margin: 10px;
+    border-radius: 50%;
+  }
+  &__list {
+      padding-left: 0;
+  }
+  &__subtitle {
+    color: black;
+
+    font-size: 15px;
+    padding-left: 15px;
+    margin-bottom: 0;
+  }
+  &__link:hover {
+    text-decoration: none;
+    opacity: 0.6;
+
+  }
+}
+.right-block-mobile {
+  z-index: 5;
+  height: auto;
+  background-color: white;
+  .right-block__list {
+    display: none;
+  }
+
+}
+.news {
+  position: fixed;
+  width: 40%;
+  //margin: 20px;
+  //padding: 20px;
+  overflow: scroll;
+  height: 100vh;
+
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  &__title {
+    padding-bottom: 10px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__title-text {
+    padding-left: 10px;
+  }
+  &__content {
+    &-subtitle {
+      text-transform: uppercase;
+    }
+  }
+}
+.news-mobile {
+  padding: 40px 20px 20px 20px;
+}

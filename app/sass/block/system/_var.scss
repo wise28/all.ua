@@ -1,0 +1,13 @@
+//$background_color_hover: #e50000;
+//$color_hover: white;
+$font_family_open_sans_light: 'OpenSans-Light', Arial, sans-serif;
+$font_family_open_sans_regular: 'OpenSans-Regular', Arial, sans-serif;
+$font_family_open_sans_semibold: 'OpenSans-SemiBold', Arial, sans-serif;
+$font_family_open_sans_bold: 'OpenSans-Bold', Arial, sans-serif;
+$font_family_monomakh:'Monomakh Unicode TT', Arial, sans-serif;
+$font_family_roboto: 'Roboto-Regular', Arial, sans-serif;
+$font_size_title: 48px;
+$font_size_main: 18px;
+$main_color: rgb(2, 118, 179);
+$breakpoint_query: (xs: 0, xss: 321px, xsm:375px, xsi: 421px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xls: 1366px, xlm: 1441px, xlg: 1601px);
+$grid-breakpoints: $breakpoint_query;

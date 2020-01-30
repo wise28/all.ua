@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Monomakh Unicode TT';
+  src: url('../font/MonomakhUnicodeTT.eot');
+  src: local('Monomakh Unicode TT Medium'), local('MonomakhUnicodeTT'),
+  url('../font/MonomakhUnicodeTT.eot?#iefix') format('embedded-opentype'),
+  url('../font/MonomakhUnicodeTT.woff') format('woff'),
+  url('../font/MonomakhUnicodeTT.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.header{
+  &__bg, &__bg-mobile {
+    //background-color: #f7ff00;
+    background: linear-gradient(to right, rgba(248,255,31,1) 0%, rgba(246,246,81,1) 41%, rgba(244,236,134,1) 85%, rgba(244,236,134,1) 95%);
+    box-shadow: -3px -2px 22px 1px rgba(26,79,184,0.43);
+    z-index: 6;
+  }
+  &__icons-item {
+    width: 44px;
+    height: 44px;
+  }
+  &__logo {
+    //background: url("../img/icons/kalina.png") top left no-repeat;
+    //background-size: cover;
+    font-family: $font_family_monomakh;
+    font-size: 40px;
+    z-index: 2;
+  }
+  &__logo-link {
+    color: #d61515;
+    &:hover {
+      opacity: 0.6;
+      text-decoration: none;
+      color: #d61515;
+    }
+  }
+  &__profile {
+    z-index: 1;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__profile-link:hover {
+    opacity: 0.6;
+  }
+  &__new-message {
+    color: #d61515;
+    padding: 5px;
+    border: 2px solid #d61515;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-family: $font_family_monomakh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    position: absolute;
+    right: -14px;
+    top: -4px;
+  }
+  &__icons {
+    z-index: 2;
+  }
+  &__icons-item-wrap {
+    position: relative;
+  }
+  &__search {
+    z-index: 1;
+  }
+  &__search-input {
+    width: 100%;
+    border: none;
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: inset 0px 1px 11px 3px rgba(238,242,27,1);
+      height: 40px;
+    }
+  }
+  &__icons-link:hover {
+    opacity: 0.6;
+  }
+}
+.header__bg-mobile {
+  .header__icons-item {
+    width: 24px;
+    height: 24px;
+  }
+  .header__logo {
+    font-size: 25px;
+  }
+  .header__search-input:focus {
+    box-shadow: inset 0px 1px 2px 3px #eef21b;
+    height: 25px;
+  }
+
+  .header__profile-link:hover {
+    opacity: 0.6;
+  }
+}
+.header-img-bg {
+  position: absolute;
+  width: 150px;
+  max-height: 90px;
+  object-fit: cover;
+  right: 0;
+  z-index: 1;
+}

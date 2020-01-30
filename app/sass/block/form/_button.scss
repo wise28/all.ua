@@ -1,0 +1,15 @@
+.btn-show-right-mobile-block {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
+  margin: 10px auto;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.btn-show-wrap {
+  background-color: white;
+  box-shadow: -23px 1px 23px -23px rgba(98, 98, 63, 0.82);
+}
