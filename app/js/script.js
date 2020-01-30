@@ -22,6 +22,7 @@ $('.btn-show-wrap').click(function () {
 });
 
 let leftMenuWidth = $('.left-menu').outerWidth();
+$('.news').height($('.news').height() - headerHeight);
 $('.news').offset({top:headerHeight, left:leftMenuWidth});
 if($(window).width() <= '992') {
     $('.news-mobile').height(newsBlock - (headerHeightMobile + userMenuMobile));
