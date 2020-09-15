@@ -365,7 +365,7 @@ body {
   background-color: #1c44e6;
   -webkit-box-shadow: 23px -17px 23px -23px rgba(98, 99, 63, 0.9);
           box-shadow: 23px -17px 23px -23px rgba(98, 99, 63, 0.9);
-  min-width: 15%;
+  width: 15%;
   height: 100vh; }
 
 .left-menu-mobile {
@@ -408,8 +408,8 @@ body {
   .user-menu__subtitle {
     color: white;
     font-family: "Monomakh Unicode TT", Arial, sans-serif;
-    font-size: 30px;
-    padding-left: 15px;
+    font-size: 26px;
+    padding-left: 10px;
     margin-bottom: 0;
     cursor: pointer; }
   .user-menu__link {
@@ -450,23 +450,44 @@ body {
   .right-block-mobile .right-block__list {
     display: none; }
 
-.news {
+.news, .content {
   position: fixed;
   width: 40%;
-  overflow: scroll;
+  padding: 20px;
+  overflow-y: scroll;
   height: 100vh; }
   @media (max-width: 991px) {
-    .news {
+    .news, .content {
       width: 100%; } }
-  .news__title {
+  .news__title, .content__title {
     padding-bottom: 10px; }
-    .news__title img {
+    .news__title img, .content__title img {
       -webkit-border-radius: 50%;
               border-radius: 50%; }
-  .news__title-text {
+  .news__title-text, .content__title-text {
     padding-left: 10px; }
-  .news__content-subtitle {
+  .news__content-subtitle, .content__content-subtitle {
     text-transform: uppercase; }
+
+.content {
+  width: 35%; }
+  @media (max-width: 991px) {
+    .content {
+      width: 100%; } }
 
 .news-mobile {
   padding: 40px 20px 20px 20px; }
+
+.my-group img {
+  max-width: 100%;
+  height: auto; }
+
+.my-group__item {
+  padding: 10px;
+  width: 25%; }
+  @media (max-width: 991px) {
+    .my-group__item {
+      width: 50%; } }
+  @media (max-width: 575px) {
+    .my-group__item {
+      width: 100%; } }
